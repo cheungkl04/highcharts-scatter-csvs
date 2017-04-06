@@ -27,11 +27,11 @@
         },
 
         title: {
-          text: 'Highcharts scatter chart from CSV'  // EDIT to insert your chart title
+          text: 'Rainbow Trout Weight vs Length'  // EDIT to insert your chart title
         },
 
         subtitle: {
-          text: 'View <a href="data-scatter.csv"> source data</a>', // EDIT link and text
+          text: 'View <a href="data-scatter.csv"> source data</a> from Seattle Central EDU', // EDIT link and text
           useHTML: true
         },
 
@@ -52,13 +52,13 @@
 
         xAxis: {
           title: {
-            text: 'Insert x-axis label'  // EDIT to insert horizontal x-axis label
+            text: 'Length (mm)'  // EDIT to insert horizontal x-axis label
           }
         },
 
         yAxis: {
           title: {
-            text: 'Insert y-axis label'   // EDIT to insert vertical y-axis label
+            text: 'Weight (g)'   // EDIT to insert vertical y-axis label
           }
         },
 
@@ -82,9 +82,9 @@
               point = this.point;
               // EDIT tooltip text labels below to match your data
               html = '<table>';
-              html += '<tr><th colspan="2"><h3>District: ' + point.name + '</h3></th></tr>';
-              html += '<tr><th>Median household income:</th><td>$' + comma(point.x) + '</td></tr>';
-              html += '<tr><th>Grades above/below average:</th><td>' + point.y + '</td></tr>';
+              html += '<tr><th colspan="2"><h3>Fish Sample # ' + point.name + '</h3></th></tr>';
+              html += '<tr><th>Length:</th><td>$' + comma(point.x) + '</td></tr>';
+              html += '<tr><th>Weight:</th><td>' + point.y + '</td></tr>';
               html += '</table>';
 
               return html;
