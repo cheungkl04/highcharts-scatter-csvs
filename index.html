@@ -145,12 +145,12 @@
   // 'circle', 'square', 'diamond', 'triangle', 'triangle-down'
   function changeSeriesMarkers(data) {
     markers = {
-      'SampleCategory1': 'circle',
+      'SampleCategory1': 'square',
       'SampleCategory2': 'triangle'
     }
 
     for (i = 0; i < data.series.length; i++) {
-      data.series[i].marker = {symbol: markers[data.series[i].name] || 'circle'};
+      data.series[i].marker = {symbol: markers[data.series[i].name] || 'square'};
     }
   }
 
